@@ -22,9 +22,11 @@ class Circle(_name: String): Shape (_name)
 
     }
 
-    override fun getArea()
-    {
-        println("Area of circle is : " + Math.PI * _radius * _radius)
+    override fun getArea(): Double {
+        var result :Double = Math.PI * _radius * _radius
+        println("Area of circle is : " + result)
         println("********************************\n")
+        return result
+
     }
 }

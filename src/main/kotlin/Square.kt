@@ -27,9 +27,10 @@ class Square(_name: String): Shape(_name)
 
     }
 
-    override fun getArea()
-    {
-        println("Area of square is : " + _length * _height)
+    override fun getArea(): Double {
+        var result: Double = _length * _height
+        println("Area of square is : " + result)
         println("********************************\n")
+        return result
     }
 }

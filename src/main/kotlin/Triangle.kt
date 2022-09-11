@@ -29,10 +29,11 @@ open class Triangle(_name: String): Shape(_name) {
 
     }
 
-    override fun getArea()
-    {
+    override fun getArea(): Double {
         var s: Double = sideA + sideB + sideC
-        println("Area of triangle is : " + sqrt(s * (s - sideA) * (s - sideB) * (s - sideC)))
+        var result: Double = sqrt(s * (s - sideA) * (s - sideB) * (s - sideC))
+        println("Area of triangle is : " + result)
         println("********************************\n")
+        return result
     }
 }

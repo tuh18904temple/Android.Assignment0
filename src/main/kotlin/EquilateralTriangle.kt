@@ -22,9 +22,10 @@ class EquilateralTriangle(_name: String): Triangle(_name)
 
     }
 
-    override fun getArea()
-    {
-        println("Area of Equilateral Triangle is : " + (sqrt(3.0) /4.0) * sA * sA )
+    override fun getArea(): Double {
+        var result:Double = (sqrt(3.0) /4.0) * sA * sA
+        println("Area of Equilateral Triangle is : " + result )
         println("********************************\n")
+        return result
     }
 }
